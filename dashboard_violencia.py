@@ -12,7 +12,7 @@ st.markdown("Violência contra Mulheres em Minas Gerais (2009–2025)")
 # Carregar todos os CSVs automaticamente
 @st.cache_data
 def carregar_dados():
-    arquivos = glob.glob("dados_violencia_mulheres_ses_*.csv")
+    arquivos = glob.glob("dados/dados_violencia_mulheres_ses_*.csv")
     dfs = []
     for arq in arquivos:
         ano = arq.split("_")[-1].split(".")[0]
