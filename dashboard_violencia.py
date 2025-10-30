@@ -171,6 +171,7 @@ with tab3:
     )
     plt.title("Distribuição das vítimas por identidade de genêro")
     plt.tight_layout()
+    st.pyplot(plt)
     st.markdown("""
     > Nesse gráfico fica evidente
     """)
