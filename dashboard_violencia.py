@@ -176,7 +176,7 @@ with tab3:
     > Nesse gráfico fica evidente a ignorância popular sobre e a possivelmente uma falta de registro de violência por parte das vítimas transgênero.
     """)
     contagem = dados["ident_gen"].value_counts(dropna=False)
-percentual = round((contagem / contagem.sum()) * 100, 1)
+    percentual = round((contagem / contagem.sum()) * 100, 1)
 
     tabela_genero = pd.DataFrame({
         "Identidade de Gênero": contagem.index,
