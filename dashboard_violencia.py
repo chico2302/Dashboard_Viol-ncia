@@ -173,7 +173,7 @@ with tab3:
     plt.tight_layout()
     st.pyplot(plt)
     st.markdown("""
-    > Nesse gráfico fica evidente
+    > Nesse gráfico fica evidente a ignorância popular sobre e a possivelmente uma falta de registro de violência por parte das vítimas transgênero.
     """)
 
 #Aba 2 com os 1000 primeiros dados do dataframe
