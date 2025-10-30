@@ -175,6 +175,7 @@ with tab3:
     st.markdown("""
     > Nesse gráfico fica evidente a ignorância popular sobre e a possivelmente uma falta de registro de violência por parte das vítimas transgênero.
     """)
+    # Tabela com porcentagens para melhor visualização já que ficou ruim de ver no gráfico
     contagem = dados["ident_gen"].value_counts(dropna=False)
     percentual = round((contagem / contagem.sum()) * 100, 1)
 
@@ -187,10 +188,6 @@ with tab3:
     st.markdown("### Distribuição das vítimas por identidade de gênero")
     st.table(tabela_genero)
     
-    st.markdown("""
-    > Nessa tabela fica evidente a ignorância popular e a possível falta de registro
-    > de violência por parte das vítimas transgênero.
-    """)
 #Aba 2 com os 1000 primeiros dados do dataframe
 with tab2:
     st.header("Tabela completa")
