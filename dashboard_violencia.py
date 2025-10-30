@@ -167,7 +167,7 @@ with tab3:
         contagem,
         labels=contagem.index,
         autopct="%1.1f%%",
-        colors=['#731406','#5fdade']
+        colors=['#5e565d', '#7c7c7d', '#731406', '#5fdade', '#D60270']
     )
     plt.title("Distribuição das vítimas por identidade de genêro")
     plt.tight_layout()
