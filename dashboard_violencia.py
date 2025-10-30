@@ -159,6 +159,21 @@ with tab3:
     st.markdown("""
     > Nesse gráfico é fácil notar a distribuição, onde **quase dois terços das vítimas são mulheres racializadas**, fato que é diretamente ligado ao racismo estrutural que o Brasil ainda enfrenta dificuldades de se desfaer. 
     """)
+    
+    #Gráfico referente à identidade de genêro
+    plt.figure(figsize=(6, 6))
+    contagem = dados["ident_gen"].value_counts()
+    plt.pie(
+        contagem,
+        labels=contagem.index,
+        autopct="%1.1f%%",
+        colors=[]
+    )
+    plt.title("Distribuição das vítimas por identidade de genêro")
+    plt.tight_layout()
+    st.markdown("""
+    > Nesse gráfico fica evidente
+    """)
 
 #Aba 2 com os 1000 primeiros dados do dataframe
 with tab2:
